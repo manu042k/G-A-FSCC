@@ -1,0 +1,45 @@
+<ng-container
+  *ngIf="{
+    productList: productList$ | async,
+    categories: categories$ | async
+  } as cmpObj"
+>
+  <div class="container mt-4">
+    <h2 class="text-center">Search and Order Items</h2>
+
+    <div class="row mb-3">
+      <div class="col-md-6 position-relative">
+        <input
+          type="text"
+          class="form-control"
+          placeholder="Search for items..."
+          id="searchInput"
+          [(ngModel)]="searchQuery"
+          (input)="onSearch()"
+        />
+        <button class="clear-btn" id="clearBtn" (click)="onClear()">
+          &times;
+        </button>
+      </div>
+      <div class="col-md-6">
+        <select
+          class="form-select"
+          id="orderSelect"
+          (change)="onCategoryChange($event)"
+        >
+          <option [value]="undefined" selected>-- Select a Category --</option>
+          <!-- Default option -->
+          <option
+            *ngFor="let category of categories$ | async"
+            [value]="category.id"
+          >
+            Order by {{ category.name }}
+          </option>
+        </select>
+      </div>
+    </div>
+  </div>
+  <app-product-container
+    [productList]="cmpObj.productList"
+  ></app-product-container>
+</ng-container>

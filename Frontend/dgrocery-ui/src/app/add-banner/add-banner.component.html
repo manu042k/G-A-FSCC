@@ -1,0 +1,30 @@
+<ng-container
+  *ngIf="{
+    addsTitle: addsTitle,
+    addsMessage: addsMessage,
+    imagePath: imagePath
+  } as cmpObj"
+>
+  <div class="delivery-container">
+    <div class="delivery-content">
+      <div class="text-section">
+        <h2 class="delivery-title">{{ cmpObj.addsTitle }}</h2>
+        <p class="delivery-message">
+          {{ cmpObj.addsMessage }}
+        </p>
+        <div class="button-container">
+          <button class="btn btn-primary" (click)="onOrderButtonClick()">
+            Order Now
+          </button>
+        </div>
+      </div>
+      <div class="image-section">
+        <img
+          src="{{ cmpObj.imagePath }}"
+          alt="Delivery Image"
+          class="delivery-image"
+        />
+      </div>
+    </div>
+  </div>
+</ng-container>

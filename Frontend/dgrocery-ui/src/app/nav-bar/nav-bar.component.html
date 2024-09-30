@@ -1,0 +1,33 @@
+<ng-container
+  *ngIf="{
+    title: title,
+    message: message,
+    userNoprofilePath: userNoprofilePath,
+    cartItemCount: cartItemCount
+  } as cmpObj"
+>
+  <nav class="navbar d-flex justify-content-between fixed-top">
+    <a class="navbar-brand" (click)="onNavButtonClick('')">
+      <i class="bi bi-basket"></i> {{ cmpObj.title }}
+    </a>
+    <div class="order-now">
+      <p>{{ cmpObj.message }}</p>
+    </div>
+
+    <div class="navbar-icons">
+      <a class="cart-icon" (click)="onNavButtonClick('')">
+        <i class="bi bi-house"></i>
+      </a>
+      <a class="cart-icon" (click)="onNavButtonClick('product-list')">
+        <i class="bi bi-card-list"></i>
+      </a>
+      <a class="cart-icon">
+        <i class="bi bi-cart-fill" (click)="onNavButtonClick('cart')"></i>
+        <span class="badge">{{ cmpObj.cartItemCount }}</span>
+      </a>
+      <div class="profile-wrapper" (click)="onNavButtonClick('user')">
+        <img src="{{ cmpObj.userNoprofilePath }}" class="profile-pic" />
+      </div>
+    </div>
+  </nav>
+</ng-container>

@@ -1,0 +1,39 @@
+<ng-container
+  *ngIf="{productName:productName ,
+    productPrice:productPrice| currency:'USD',
+    productQuantity:productQuantity,
+    productImageUrl:productImageUrl,
+    addToCartQuantity:addToCartQuantity,
+    cartItem:cartItem,
+}
+  as cmpObj"
+>
+  <div class="card">
+    <img
+      src="{{ cmpObj.productImageUrl }}"
+      alt="Product Image"
+      class="card-image"
+    />
+    <div class="card-content">
+      <h2 class="card-name">{{ cmpObj.productName }}</h2>
+      <div class="card-price">{{ cmpObj.productQuantity }}</div>
+      <div class="card-quantity">
+        <i class="bi bi-plus-circle" (click)="onAddQuantity()"></i>
+        <span class="quantity">{{ cmpObj.addToCartQuantity }}</span>
+        <i class="bi bi-dash-circle" (click)="onRemoveQuantity()"></i>
+      </div>
+      <div class="add-to-button">
+        <button
+          class="btn btn-primary"
+          [disabled]="cmpObj.addToCartQuantity == 0"
+          (click)="onAddToCart()"
+        >
+          Add to Cart
+        </button>
+      </div>
+      <div *ngIf="cmpObj.productQuantity == 0">
+        <p>Out of stock</p>
+      </div>
+    </div>
+  </div>
+</ng-container>

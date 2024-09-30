@@ -1,0 +1,47 @@
+<div class="container mt-4">
+  <h2 class="text-center">User Profile</h2>
+
+  <div class="profile-card">
+    <div class="profile-header text-center">
+      <img
+        *ngIf="(userInfo$ | async)?.profile_pic; else noImage"
+        [src]="(userInfo$ | async)?.profile_pic"
+        alt="Profile Picture"
+        class="profile-pic"
+      />
+      <ng-template #noImage>
+        <div class="default-profile-pic">
+          <span
+            >{{ (userInfo$ | async)?.first_name
+            }}{{ (userInfo$ | async)?.last_name }}</span
+          >
+        </div>
+      </ng-template>
+      <h3>
+        {{ (userInfo$ | async)?.first_name }}
+        {{ (userInfo$ | async)?.last_name }}
+      </h3>
+    </div>
+
+    <ul class="profile-details mt-3">
+      <li><strong>Email:</strong> {{ (userInfo$ | async)?.email }}</li>
+      <li>
+        <strong>Phone Number:</strong> {{ (userInfo$ | async)?.phone_number }}
+      </li>
+      <li>
+        <strong>Street Address:</strong>
+        {{ (userInfo$ | async)?.street_address }}
+      </li>
+      <li><strong>City:</strong> {{ (userInfo$ | async)?.city }}</li>
+      <li><strong>State:</strong> {{ (userInfo$ | async)?.state }}</li>
+      <li>
+        <strong>Postal Code:</strong> {{ (userInfo$ | async)?.postal_code }}
+      </li>
+      <li><strong>Country:</strong> {{ (userInfo$ | async)?.country }}</li>
+    </ul>
+
+    <div class="text-center">
+      <button class="btn btn-primary" (click)="logout()">logout</button>
+    </div>
+  </div>
+</div>

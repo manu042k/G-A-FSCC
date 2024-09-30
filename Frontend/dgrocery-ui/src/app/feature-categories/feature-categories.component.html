@@ -1,0 +1,37 @@
+<ng-container
+  *ngIf="{
+    title: title,
+    categories: categories$ | async | slice : 0 : 5,
+    activeCategoryId: activeCategoryId,
+    products: products$ | async
+  } as cmpObj"
+>
+  <div class="container">
+    <div class="row align-items-center">
+      <div class="col">
+        <h4 class="featured-title">{{ cmpObj.title }}</h4>
+      </div>
+      <div class="col-md-auto"></div>
+      <div class="col col-lg-2 text-end" (click)="onMoreButtonClick()">
+        <a class="more-link"> <i class="bi bi-arrow-right-circle"></i> More </a>
+      </div>
+    </div>
+  </div>
+
+  <div class="parent" *ngIf="cmpObj.categories">
+    <div *ngFor="let category of cmpObj.categories; let i = index">
+      <button
+        class="btn btn-primary"
+        [class.active]="
+          category.id === (cmpObj.activeCategoryId || cmpObj.categories[0]?.id)
+        "
+        (click)="onCategoryClick(category.id)"
+      >
+        {{ category.name }}
+      </button>
+    </div>
+  </div>
+
+  <app-product-container [productList]="cmpObj.products" style="width: 100%">
+  </app-product-container>
+</ng-container>

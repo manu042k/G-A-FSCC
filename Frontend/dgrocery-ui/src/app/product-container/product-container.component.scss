@@ -1,0 +1,11 @@
+
+.grid-container {
+    margin-left: 3.5rem;
+    margin-right: 3.5rem;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr)); 
+    gap: 10px; 
+}
+.grid-item {
+    padding: 20px;
+}

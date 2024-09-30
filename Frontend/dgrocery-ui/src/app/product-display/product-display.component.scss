@@ -1,0 +1,44 @@
+h2 {
+    color: var(--color-text-secondary);
+    margin-bottom: 1.5rem;
+}
+
+.form-control {
+    box-shadow: none;
+    border: 1px solid var(--color-border);
+}
+
+.form-control:focus {
+    border-color: var(--color-accent);
+    box-shadow: 0 0 0.5rem rgba(52, 105, 84, 0.5);
+}
+
+.form-select {
+    box-shadow: none;
+    border: 1px solid var(--color-border);
+}
+
+.form-select:focus {
+    border-color: var(--color-accent);
+    box-shadow: 0 0 0.5rem rgba(52, 105, 84, 0.5);
+}
+
+.clear-btn {
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    background: none;
+    border: none;
+    color: var(--color-grey);
+    font-size: 1.25rem;
+    cursor: pointer;
+}
+
+.clear-btn:hover {
+    color: var(--color-text-secondary);
+}
+
+.container {
+    margin-top: 2rem;
+}

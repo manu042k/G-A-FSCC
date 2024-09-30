@@ -1,0 +1,17 @@
+<ng-container
+  *ngIf="{
+    productList: productList
+  } as cmpObj"
+>
+  <div class="grid-container">
+    <div *ngFor="let item of cmpObj.productList">
+      <app-product-item
+        [productId]="item.id"
+        [productName]="item.name"
+        [productPrice]="item.price"
+        [productQuantity]="item.quantity"
+        [productImageUrl]="item.image"
+      ></app-product-item>
+    </div>
+  </div>
+</ng-container>

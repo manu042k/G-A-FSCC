@@ -1,0 +1,317 @@
+[
+    {
+        "Item Name": "Banana",
+        "Item Price": "0.36",
+        "Item Category ": "Fruits",
+        "Quantity": "36",
+        "Asset Name": "banana.jpeg"
+    },
+    {
+        "Item Name": "Bacon",
+        "Item Price": "4.50",
+        "Item Category ": "Meat",
+        "Quantity": "72",
+        "Asset Name": "bacon.jpg"
+    },
+    {
+        "Item Name": "Salmon",
+        "Item Price": "12.37",
+        "Item Category ": "Seafood",
+        "Quantity": "17",
+        "Asset Name": "salmon.jpg"
+    },
+    {
+        "Item Name": "Apple",
+        "Item Price": "0.99",
+        "Item Category ": "Fruits",
+        "Quantity": "97",
+        "Asset Name": "apple.jpg"
+    },
+    {
+        "Item Name": "Red Bell Pepper",
+        "Item Price": "0.73",
+        "Item Category ": "Vegetables",
+        "Quantity": "43",
+        "Asset Name": "red_bell_pepper.jpg"
+    },
+    {
+        "Item Name": "Croissant",
+        "Item Price": "0.49",
+        "Item Category ": "Bakery",
+        "Quantity": "24",
+        "Asset Name": "croissant.jpg"
+    },
+    {
+        "Item Name": "Donut",
+        "Item Price": "0.49",
+        "Item Category ": "Bakery",
+        "Quantity": "42",
+        "Asset Name": "donut.jpeg"
+    },
+    {
+        "Item Name": "Orange",
+        "Item Price": "1.29",
+        "Item Category ": "Fruits",
+        "Quantity": "83",
+        "Asset Name": "orange.png"
+    },
+    {
+        "Item Name": "Chicken Breast",
+        "Item Price": "3.99",
+        "Item Category ": "Meat",
+        "Quantity": "51",
+        "Asset Name": "chicken_breast.png"
+    },
+    {
+        "Item Name": "Broccoli",
+        "Item Price": "1.31",
+        "Item Category ": "Vegetables",
+        "Quantity": "74",
+        "Asset Name": "broccoli.png"
+    },
+    {
+        "Item Name": "Tuna",
+        "Item Price": "11.41",
+        "Item Category ": "Seafood",
+        "Quantity": "32",
+        "Asset Name": "tuna.png"
+    },
+    {
+        "Item Name": "Egg (dozen)",
+        "Item Price": "7.49",
+        "Item Category ": "Misc",
+        "Quantity": "16",
+        "Asset Name": "egg.png"
+    },
+    {
+        "Item Name": "Ketchup",
+        "Item Price": "3.99",
+        "Item Category ": "Condiments",
+        "Quantity": "89",
+        "Asset Name": "ketchup.png"
+    },
+    {
+        "Item Name": "Mustard",
+        "Item Price": "3.99",
+        "Item Category ": "Condiments",
+        "Quantity": "32",
+        "Asset Name": "mustard.png"
+    },
+    {
+        "Item Name": "Ranch",
+        "Item Price": "6.00",
+        "Item Category ": "Condiments",
+        "Quantity": "67",
+        "Asset Name": "ranch.png"
+    },
+    {
+        "Item Name": "Mayonnaise",
+        "Item Price": "3.99",
+        "Item Category ": "Condiments",
+        "Quantity": "55",
+        "Asset Name": "mayonnaise.png"
+    },
+    {
+        "Item Name": "Hot Sauce",
+        "Item Price": "8.00",
+        "Item Category ": "Condiments",
+        "Quantity": "8",
+        "Asset Name": "hot_sauce.png"
+    },
+    {
+        "Item Name": "Pork Belly",
+        "Item Price": "13.35",
+        "Item Category ": "Meat",
+        "Quantity": "3",
+        "Asset Name": "pork_belly.jpeg"
+    },
+    {
+        "Item Name": "Sandwich Cookies",
+        "Item Price": "5.00",
+        "Item Category ": "Cookies & Chips",
+        "Quantity": "50",
+        "Asset Name": "sandwich_cookies.jpeg"
+    },
+    {
+        "Item Name": "Parsley",
+        "Item Price": "1.35",
+        "Item Category ": "Vegetables",
+        "Quantity": "10",
+        "Asset Name": "parsley.jpeg"
+    },
+    {
+        "Item Name": "Potato Chips",
+        "Item Price": "5.00",
+        "Item Category ": "Cookies & Chips",
+        "Quantity": "80",
+        "Asset Name": "potato_chips.jpeg"
+    },
+    {
+        "Item Name": "Basil",
+        "Item Price": "2.49",
+        "Item Category ": "Vegetable",
+        "Quantity": "7",
+        "Asset Name": "basil.jpeg"
+    },
+    {
+        "Item Name": "M&M Peanuts",
+        "Item Price": "2.50",
+        "Item Category ": "Candy",
+        "Quantity": "4",
+        "Asset Name": "m&m_peanuts.png"
+    },
+    {
+        "Item Name": "Ferrero Rocher",
+        "Item Price": "9.50",
+        "Item Category ": "Candy",
+        "Quantity": "6",
+        "Asset Name": "ferrero_rocher.png"
+    },
+    {
+        "Item Name": "Twix",
+        "Item Price": "3.00",
+        "Item Category ": "Candy",
+        "Quantity": "100",
+        "Asset Name": "twix.jpg"
+    },
+    {
+        "Item Name": "Kitkat",
+        "Item Price": "3.00",
+        "Item Category ": "Candy",
+        "Quantity": "20",
+        "Asset Name": "kitkat.jpg"
+    },
+    {
+        "Item Name": "Rosemary",
+        "Item Price": "2.99",
+        "Item Category ": "Vegetables ",
+        "Quantity": "3",
+        "Asset Name": "rosemary.jpeg"
+    },
+    {
+        "Item Name": "Roma Tomato",
+        "Item Price": "0.87",
+        "Item Category ": "Vegetables",
+        "Quantity": "37",
+        "Asset Name": "roma_tomato.jpeg"
+    },
+    {
+        "Item Name": "Red Onions",
+        "Item Price": "1.87",
+        "Item Category ": "Vegetables",
+        "Quantity": "23",
+        "Asset Name": "red_onions.jpeg"
+    },
+    {
+        "Item Name": "Spinach Bunch",
+        "Item Price": "2.49",
+        "Item Category ": "Vegetables",
+        "Quantity": "35",
+        "Asset Name": "spinach_bunch.jpeg"
+    },
+    {
+        "Item Name": "Thyme",
+        "Item Price": "2.99",
+        "Item Category ": "Vegetables",
+        "Quantity": "5",
+        "Asset Name": "thyme.jpeg"
+    },
+    {
+        "Item Name": "Milk (gallon)",
+        "Item Price": "3.75",
+        "Item Category ": "Misc",
+        "Quantity": "12",
+        "Asset Name": "milk.jpeg"
+    },
+    {
+        "Item Name": "Baguette",
+        "Item Price": "1.50",
+        "Item Category ": "Bakery",
+        "Quantity": "15",
+        "Asset Name": "baguette.jpeg"
+    },
+    {
+        "Item Name": "BBQ Sauce",
+        "Item Price": "5.00",
+        "Item Category ": "Condiments",
+        "Quantity": "20",
+        "Asset Name": "bbq_sauce.jpeg"
+    },
+    {
+        "Item Name": "Halibut",
+        "Item Price": "23.00",
+        "Item Category ": "Seafood",
+        "Quantity": "4",
+        "Asset Name": "halibut.jpeg"
+    },
+    {
+        "Item Name": "Shallot",
+        "Item Price": "1.00",
+        "Item Category ": "Vegetables",
+        "Quantity": "46",
+        "Asset Name": "shallot.jpeg"
+    },
+    {
+        "Item Name": "Cilantro",
+        "Item Price": "2.00",
+        "Item Category ": "Vegetables",
+        "Quantity": "13",
+        "Asset Name": "cilantro.jpeg"
+    },
+    {
+        "Item Name": "Orange Juice",
+        "Item Price": "4.00",
+        "Item Category ": "Drinks",
+        "Quantity": "20",
+        "Asset Name": "orange_juice.jpeg"
+    },
+    {
+        "Item Name": "Apple Juice",
+        "Item Price": "3.50",
+        "Item Category ": "Drinks",
+        "Quantity": "14",
+        "Asset Name": "apple_juice.jpeg"
+    },
+    {
+        "Item Name": "Cola",
+        "Item Price": "8.00",
+        "Item Category ": "Drinks",
+        "Quantity": "10",
+        "Asset Name": "cola.png"
+    },
+    {
+        "Item Name": "Yogurt",
+        "Item Price": "3.79",
+        "Item Category ": "Misc ",
+        "Quantity": "99",
+        "Asset Name": "yogurt.png"
+    },
+    {
+        "Item Name": "Salt",
+        "Item Price": "1.39",
+        "Item Category ": "Condiments",
+        "Quantity": "89",
+        "Asset Name": "salt.png"
+    },
+    {
+        "Item Name": "Sugar",
+        "Item Price": "3.49",
+        "Item Category ": "Condiments",
+        "Quantity": "79",
+        "Asset Name": "sugar.png"
+    },
+    {
+        "Item Name": "Flour",
+        "Item Price": "2.89",
+        "Item Category ": "Bakery",
+        "Quantity": "69",
+        "Asset Name": "flour.png"
+    },
+    {
+        "Item Name": "Laundry Detergent",
+        "Item Price": "15.99",
+        "Item Category ": "Misc ",
+        "Quantity": "59",
+        "Asset Name": "laundry_detergent.png"
+    }
+]

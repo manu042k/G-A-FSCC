@@ -1,0 +1,33 @@
+:root {
+    --color-white: #ffffff; 
+    --color-light-grey: #f5f5f5; 
+    --color-grey: #d0d0d0; 
+    --color-medium-grey: #a0a0a0; 
+    --color-dark-grey: #606060; 
+    --color-black: #000000; 
+    --color-text-primary: #000000; 
+    --color-text-secondary: #388E3C; 
+    --color-background: #e5e3e3; 
+    --color-border: #A5D6A7; 
+    --color-accent: #346954; 
+    --color-golden-yellow: #e5c407dd; 
+}
+
+$primary: var(--color-accent);
+$secondary: var(--color-text-secondary);
+$light: var(--color-light-grey);
+$dark: var(--color-dark-grey);
+
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700;800&display=swap');
+
+body {
+    background-color: var(--color-background);
+    color: var(--color-text-primary);
+    font-family: "Open Sans", sans-serif; 
+    font-optical-sizing: auto;           
+    font-weight: 700;                     
+    font-style:normal;                   
+}
+
+
+

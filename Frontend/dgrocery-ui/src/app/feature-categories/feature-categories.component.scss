@@ -1,0 +1,45 @@
+.featured-title {
+    color: var(  --color-accent); 
+    font-weight: bold; 
+}
+
+.parent {
+    display: grid; 
+    grid-template-columns: repeat(5, 1fr); 
+    grid-column-gap: 2rem; 
+    margin-left: 7%; 
+    margin-top: 1rem; 
+}
+
+.btn {
+    border-radius: 2rem; 
+    background-color: var(--color-medium-grey); 
+    color: var(--color-white); 
+    padding: 0.75rem 1rem; 
+    font-size: 1rem; 
+    width: 80%; 
+    border: none; 
+    transition: background-color 0.3s; 
+}
+
+.btn:hover {
+    background-color: var( --color-accent); 
+}
+
+.active {
+    background-color: var( --color-accent);
+}
+
+
+.more-link {
+    color: var( --color-accent); 
+    text-decoration: none; 
+    font-weight: bold; 
+}
+
+.more-link:hover {
+    text-decoration: underline; 
+}
+
+
+

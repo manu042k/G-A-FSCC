@@ -1,0 +1,138 @@
+<div *ngIf="orderDetails; then orderBlock; else loadingBlock"></div>
+
+<!-- Order Block -->
+<ng-template #orderBlock>
+  <div class="order-details-container">
+    <h3 class="order-title">Order Details</h3>
+
+    <div class="order-section">
+      <h4 class="section-title">Order</h4>
+      <p><strong>Order ID:</strong> {{ orderDetails.order.id }}</p>
+      <p><strong>Total Price:</strong> {{ orderDetails.order.total_price }}</p>
+    </div>
+
+    <div class="payment-section">
+      <h4 class="section-title">Payment</h4>
+      <p><strong>Payment ID:</strong> {{ orderDetails.payment.id }}</p>
+      <p>
+        <strong>Payment Method:</strong>
+        {{ orderDetails.payment.payment_method }}
+      </p>
+      <p><strong>Amount:</strong> {{ orderDetails.payment.amount }}</p>
+      <p><strong>Status:</strong> {{ orderDetails.payment.status }}</p>
+      <p>
+        <strong>Payment Date:</strong>
+        {{ orderDetails.payment.payment_date | date : 'medium' }}
+      </p>
+    </div>
+
+    <div class="shipping-section">
+      <h4 class="section-title">Shipping</h4>
+      <p><strong>Shipping ID:</strong> {{ orderDetails.shipping.id }}</p>
+      <p>
+        <strong>Shipping Address:</strong>
+        {{ orderDetails.shipping.shipping_address }}
+      </p>
+      <p>
+        <strong>Tracking Number:</strong>
+        {{ orderDetails.shipping.tracking_number }}
+      </p>
+      <p><strong>Status:</strong> {{ orderDetails.shipping.status }}</p>
+      <p>
+        <strong>Estimated Delivery Date:</strong>
+        {{ orderDetails.shipping.estimated_delivery_date | date : 'medium' }}
+      </p>
+    </div>
+  </div>
+</ng-template>
+
+<!-- Loading Block -->
+<ng-template #loadingBlock>
+  <ng-container
+    *ngIf="{
+      cartItems: cartItems$ | async,
+      cartTitle: cartTitle,
+      shippingAddress: shippingAddress,
+      totalPrice: totalPrice
+    } as cmpObj"
+  >
+    <div class="container mt-4">
+      <h2 class="title">{{ cmpObj.cartTitle }}</h2>
+
+      <ul class="list-group">
+        <!-- Heading Row -->
+        <li class="list-group-item heading-row">
+          <div class="row">
+            <div class="col-md-4">Item</div>
+            <div class="col-md-4">Quantity</div>
+            <div class="col-md-4">Price</div>
+          </div>
+        </li>
+
+        <!-- Cart Items -->
+        <ng-container *ngFor="let item of cmpObj.cartItems; index as i">
+          <li class="list-group-item">
+            <div class="row">
+              <div class="col-md-4">{{ item.product?.name }}</div>
+              <div class="col-md-4">{{ item.quantity }}</div>
+              <div class="col-md-4">
+                {{ item.product.price * item.quantity | currency : 'USD' }}
+              </div>
+            </div>
+          </li>
+        </ng-container>
+
+        <!-- Total Price -->
+        <li class="list-group-item">
+          <div class="row">
+            <div class="col-md-6">Total</div>
+            <div class="col-md-2">
+              {{ cmpObj.totalPrice | currency : 'USD' }}
+            </div>
+          </div>
+        </li>
+
+        <!-- Shipping Address -->
+        <li class="list-group-item">
+          <div class="row">
+            <div class="col-md-6">Address</div>
+            <div class="col-md-2">{{ cmpObj.shippingAddress }}</div>
+          </div>
+        </li>
+
+        <!-- Payment Method Selection -->
+        <li class="list-group-item">
+          <div class="row">
+            <div class="col-md-6">Payment Method</div>
+            <div class="col-md">
+              <select
+                class="form-select"
+                [(ngModel)]="selectedPaymentMethod"
+                aria-label="Select Payment Method"
+              >
+                <option value="credit_card">Credit Card</option>
+                <option value="debit_card">Debit Card</option>
+                <option value="net_banking">Net Banking</option>
+                <option value="wallet">Wallet</option>
+              </select>
+            </div>
+          </div>
+        </li>
+      </ul>
+
+      <!-- Action Buttons -->
+      <div class="row mt-3">
+        <div class="col-md-6">
+          <button class="btn btn-cancel w-100" (click)="onCancel()">
+            Cancel
+          </button>
+        </div>
+        <div class="col-md-6">
+          <button class="btn btn-confirm w-100" (click)="onConfirm()">
+            Confirm Order
+          </button>
+        </div>
+      </div>
+    </div>
+  </ng-container>
+</ng-template>
