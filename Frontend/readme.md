@@ -4,12 +4,9 @@ This README provides instructions for setting up and running an Angular project 
 
 ## Prerequisites
 
-- macOS operating system
-- Terminal application
-
 ## Setup Instructions
 
-### 1a. Node.js Installation (Homebrew)
+### 1a. Node.js (v20.17.0) Installation (Homebrew)
 
 1. Install Homebrew (if not already installed):
 
@@ -29,7 +26,7 @@ This README provides instructions for setting up and running an Angular project 
    npm --version
    ```
 
-### 1b. Node.js Installation (Node.js Website)
+### 1b. Node.js Installation (v20.17.0) (Node.js Website)
 
 1. Install Homebrew (if not already installed):
 
@@ -89,7 +86,7 @@ Nx workspace offers several advantages for Angular development:
 Navigate to your project directory and install dependencies:
 
 ```
-cd your-workspace-name
+cd dgrocery-ui
 npm install --legacy-peer-deps
 ```
 
@@ -108,3 +105,5 @@ npx nx serve dgrocery-ui
 ```
 
 Addinationally you can run your application throught NX consle vs code extension.
+
+Ref: https://nx.dev/getting-started/installation

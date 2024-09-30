@@ -11,7 +11,7 @@ This README provides instructions for setting up and running a Django project on
 
 ### 1. Python Installation
 
-macOS comes with Python pre-installed. To install the latest Python:
+macOS comes with Python pre-installed. To install the Python3 3.9.6
 
 1. Install Homebrew (if not already installed):
 
@@ -51,8 +51,6 @@ macOS comes with Python pre-installed. To install the latest Python:
 
 ### 3. Install Requirements
 
-Assuming you have a `requirements.txt` file in your project directory:
-
 1. Install the required packages:
    ```
    pip install -r requirements.txt
@@ -70,12 +68,11 @@ Assuming you have a `requirements.txt` file in your project directory:
    python manage.py makemigrations
    ```
 
-````
-3.  ```
-python manage.py migarte
-````
+3. ```
+   python manage.py migarte
+   ```
 
-4. Custom command to load json data into the database
+4. Custom command to load json data into the database **Do this before starting server**
    ```
    python manage.py load_product static/coding_challenge_groceries.json
    ```
@@ -87,10 +84,10 @@ python manage.py migarte
 
 6. Open a web browser and go to `http://127.0.0.1:8000/` to view your Django project.
 
-## Additional Notes
+7. Swagger link : http://localhost:8000/api/docs/#/
 
-- To deactivate the virtual environment when you're done, simply run:
+8. To deactivate the virtual environment :
 
-  ```
-  deactivate
-  ```
+```
+deactivate
+```
